@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(212, 179, 243);
+            background-image: url(10.jpg);
+            background-size: cover;
+        }
+
+
+
+        .left {
+            height: 580px;
+            width: 35%;
+            background-color: rgb(168, 80, 251);
+            margin: 1%;
+            border-radius: 10px;
+            float: left;
+            background-image: url(9.jpg);
+            background-size: cover;
+        }
+
+        .right {
+            height: 520px;
+            width: 55%;
+            background-color: white;
+            margin: 4%;
+            border-radius: 10px;
+            float: left;
+        }
+
+        .left1 {
+            margin-left: 8%;
+            margin-right: 8%;
+            margin-top: 30px;
+            color: white;
+            font-family: sans-serif;
+            font-size: 10pt;
+        }
+
+        .left2 {
+            margin-top: 18%;
+            margin-left: 7%;
+            margin-right: 7%;
+            color: white;
+            font-family: sans-serif;
+            font-size: 30pt;
+        }
+
+        .left3 {
+            margin-top: -8%;
+            margin-left: 7%;
+            margin-right: 7%;
+            color: white;
+            font-family: sans-serif;
+            font-size: 10pt;
+            line-height: 13pt;
+        }
+
+        .card {
+            height: 120px;
+            width: 82%;
+            margin: 7%;
+            margin-right: 11%;
+            margin-top: 27%;
+            font-family: sans-serif;
+            font-size: 10pt;
+            background-color: white;
+            border-radius: 5%;
+            padding: 2%;
+        }
+
+        .image {
+            height: 30px;
+            width: 30px;
+            border-radius: 5px;
+            background-color: gray;
+            background-image: url(8.jpg);
+            background-size: cover;
+            float: left;
+        }
+
+        .about {
+            height: 30px;
+            width: 300px;
+            margin-left: 13%;
+        }
+
+        .right1 {
+            font-size: 15pt;
+            margin-top: -3%;
+        }
+
+        .right2 {
+            font-size: 10pt;
+            margin-top: -2%;
+        }
+
+
+
+        .button-26 {
+            appearance: button;
+            background-color: #1652F0;
+            border: 1px solid #1652F0;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-family: Graphik, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            font-size: 14px;
+            line-height: 1.15;
+            overflow: visible;
+            padding: 12px 16px;
+            position: relative;
+            text-align: center;
+            text-transform: none;
+            transition: all 80ms ease-in-out;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: 101%;
+        }
+
+        .button-26:disabled {
+            opacity: .5;
+        }
+
+        .button-26:focus {
+            outline: 0;
+        }
+
+        .button-26:hover {
+            background-color: #0A46E4;
+            border-color: #0A46E4;
+        }
+
+        .button-26:active {
+            background-color: #0039D7;
+            border-color: #0039D7;
+        }
+
+        .grey {
+            color: rgba(128, 128, 128, 0.665);
+            font-size: 10pt;
+        }
+
+
+        /* Mobile Device */
+        @media only screen and (max-width: 767px) {
+            .left {
+                height: 320px;
+                width: 98%;
+                background-color: rgb(168, 80, 251);
+                margin: 1%;
+                border-radius: 10px;
+                background-image: url(8.jpg);
+                background-size: cover;
+            }
+
+            .right {
+                height: 520px;
+                width: 92%;
+                background-color: white;
+                margin: 4%;
+                border-radius: 10px;
+            }
+
+            .container {
+                height: 940px;
+                width: 70%;
+                background-color: white;
+                margin-top: 4%;
+                border-radius: 10px;
+                background-size: cover;
+            }
+
+            .card {
+                display: none;
+            }
+
+            input[type=text],
+            input[type=email],
+            input[type=password] {
+                color: grey;
+                padding: 9px 10px;
+                text-decoration: none;
+                margin: 5px 5px;
+                cursor: pointer;
+                border-radius: 4px;
+                width: 90%;
+            }
+        }
+
+        /* Other Device*/
+        @media only screen and (min-width: 768px) {
+            .left {
+                height: 580px;
+                width: 35%;
+                background-color: rgb(168, 80, 251);
+                margin: 1%;
+                border-radius: 10px;
+                float: left;
+                background-image: url(8.jpg);
+                background-size: cover;
+            }
+
+            .right {
+                height: 520px;
+                width: 55%;
+                background-color: white;
+                margin: 4%;
+                border-radius: 10px;
+                float: left;
+            }
+
+            .container {
+                height: 600px;
+                width: 70%;
+                background-color: white;
+                margin-top: 4%;
+                border-radius: 10px;
+                background-size: cover;
+            }
+
+            input[type=text],
+            input[type=email],
+            input[type=password] {
+                color: grey;
+                padding: 9px 10px;
+                text-decoration: none;
+                margin: 5px 5px;
+                cursor: pointer;
+                border-radius: 4px;
+                width: 96%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <p class="left1">START FOR FREE</p>
+            <p class="left2">Create a new <br> account.</p>
+            <p class="left3">
+                Embark on a Journey to a Healthier Lifestyle<br>
+                with Our Fitness and Wellness Community<br>
+                Sign Up Today!
+            </p>
+            <div class="card">
+                <p>
+                    Signing up for this wellness website was the best decision I made for my health.
+                </p>
+                <div style="margin-top: 8%;">
+                    <div class=" image"></div>
+                    <div class="about">
+                        <p><b>James Anderson</b><br>Athlete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <p class="right1"><b>Get Start</b></p>
+            <p class="right2">Already a member? Log in</p>
+            <div class="right3">
+                <p class="grey">First Name</p>
+                <input type="text" placeholder="First Name">
+                <p class="grey">Last Name</p>
+                <input type="text" placeholder="Last Name">
+                <p class="grey">Email Id</p>
+                <input type="email" placeholder="examplemail@gmail.com"><br>
+                <p class="grey">Password</p>
+                <input type="password"><br>
+                <p class="grey">Confirm Password</p>
+                <input type="password">
+            </div>
+
+            <br>
+            <button class="button-26" role="button">Sign Up</button>
+        </div>
+    </div>
+</body>
+
+</html>
